@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-syoat",
+      "settings": {
+        "heading": "Syoat Care for Kids 5-12",
+        "subheading": "Give your child a gentle, fun and effective bath routine with Syoat body wash, cream, shampoo and oil.",
+        "cta_text": "Shop All Products",
+        "cta_link": "/collections/all"
+      }
+    },
+    "trust": {
+      "type": "trust-strip",
+      "settings": {}
+    },
+    "categories": {
+      "type": "product-categories",
+      "settings": {
+        "title": "Shop by Care Type"
+      }
+    }
+  },
+  "order": ["hero", "trust", "categories"]
+}

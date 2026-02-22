@@ -1,0 +1,19 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Syoat Kids Care",
+    "theme_version": "1.0.0",
+    "theme_author": "Codex"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "text",
+        "id": "brand_tagline",
+        "label": "Brand tagline",
+        "default": "Safe and gentle care for kids aged 5-12"
+      }
+    ]
+  }
+]

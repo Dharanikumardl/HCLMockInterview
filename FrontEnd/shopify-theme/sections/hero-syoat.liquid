@@ -1,0 +1,27 @@
+<section class="container hero">
+  <div class="hero__copy">
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.subheading }}</p>
+    <a class="button button--primary" href="{{ section.settings.cta_link }}">{{ section.settings.cta_text }}</a>
+  </div>
+
+  {% if section.settings.image != blank %}
+    <div class="hero__media">
+      {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: section.settings.heading }}
+    </div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Syoat hero",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Clean, Soft & Happy Skin for Kids" },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Syoat makes body wash, cream, shampoo, and oil specially designed for children aged 5-12 with gentle ingredients and parent-trusted formulas." },
+    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Shop Syoat" },
+    { "type": "url", "id": "cta_link", "label": "CTA link" },
+    { "type": "image_picker", "id": "image", "label": "Hero image" }
+  ],
+  "presets": [{ "name": "Syoat hero" }]
+}
+{% endschema %}
