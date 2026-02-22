@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>Syoat</strong> — kid-safe bath & body care for ages 5-12.</p>
+    <p>{{ shop.address.summary }}</p>
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": []
+}
+{% endschema %}
